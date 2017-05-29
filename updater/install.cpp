@@ -968,6 +968,7 @@ Value* GetPropFn(const char* name, State* state, int argc, Expr* argv[]) {
     return StringValue(strdup(value));
 }
 
+
 // file_getprop(file, key)
 //
 //   interprets 'file' as a getprop-style file (key=value pairs, one
@@ -1667,5 +1668,4 @@ void RegisterInstallFunctions() {
 
     RegisterFunction("enable_reboot", EnableRebootFn);
     RegisterFunction("tune2fs", Tune2FsFn);
-    RegisterFunction("get_device_compatible", ConfirmDevVariant);
 }
